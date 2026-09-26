@@ -7,7 +7,6 @@ triggers:
   - "infj writing style"
   - "counselor persona"
   - "kirby-persona-infj help"
-  - "infj ?intensity"
 risk: unverified
 author: william-fitzpatrick
 tags: [kirby, ai-agent, workflow, writing]
@@ -24,10 +23,8 @@ tags: [kirby, ai-agent, workflow, writing]
 ## Examples
 - "Use kirby-persona-infj help" (Displays the Cheat Sheet)
 - "Rewrite this technical memo as The Colleague, British Understatement."
-- "Apply INFJ Intensity 3.5 in Contemplative register to this essay draft."
-- "Rewrite this speech with an INFJ gradient of 1 -> 4 (Colleague to Advocate)."
-- "Rewrite this launch announcement using INFJ prescription mode (pick the best settings for me)."
+- "Apply INFJ gradient of 1 -> 4 (Colleague to Advocate) to this speech."
 
 ## Limitations
-- Automatically clamps to Level 0–1 (The Technician / Colleague) on purely transactional, procedural, or legal texts.
-- Prohibits uninstantiated mysticism, horoscope phrasing, and melodramatic therapeutic slop.
+- Clamps to Level 0–1 (Technician/Colleague) on transactional or procedural text.
+- Prohibits uninstantiated mysticism and melodramatic therapeutic slop.
