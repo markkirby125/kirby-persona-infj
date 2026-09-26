@@ -85,6 +85,27 @@ Dial in age horizons and rhetorical traditions without resorting to caricatures:
 
 ---
 
+## ⚠️ Recommended Companion Skill Stack (The Human-Craft Triad)
+
+> [!NOTE]
+> `kirby-persona-infj` is fully self-sufficient with built-in cognitive guardrails. However, **prose quality and syntactic discipline are significantly elevated** when paired with its companion skills.
+> 
+> The INFJ engine provides the *rhetorical payload and emotional resonance*, but it relies on external companion skills for *sentence-level syntactic compression* and *forensic anti-AI slop defense*. Without them, text risks subtle AI wordiness and loose clause structures.
+> 
+> **Refer to the companion skill links below to install the necessary enhancement skills:**
+
+### 🛠️ 1. Structural Writing Mechanics (The Rails)
+* **[Kirby Skills Writers Collection](https://github.com/markkirby125/kirby-fitzpatrick-writers-collection)**  
+  The 48 William Fitzpatrick writing science skills suite. Provides locomotive syntax (verb in the first 5 words), topic-comment information flow, and zero meta-discourse pruning.
+  - **Quick Install**: `@agent Install the Kirby Fitzpatrick Writers Collection from: https://github.com/markkirby125/kirby-fitzpatrick-writers-collection`
+
+### 🛡️ 2. Forensic Anti-AI Slop Defense (The Gate)
+* **Anti-AI Slop & Humanization Skills (`write-content` / `improve-content`)**  
+  Purges 25+ Tier-1 corporate AI buzzwords (*delve, tapestry, leverage, robust, seamless*), bans rule-of-three clumping, copula avoidance, and enforces human sentence burstiness.
+  - **Location**: Included with the [Kirby Skills Ecosystem](https://github.com/markkirby125/kirby-skills-collection).
+
+---
+
 ## Getting Started
 
 ### 1. Installation via The Magic Prompt
@@ -94,7 +115,10 @@ Copy and paste this into any AI coding app (Cursor, Windsurf, Claude Code, Grok,
 @agent Install the kirby-persona-infj skill from: https://github.com/markkirby125/kirby-persona-infj
 1. Read `SKILL.md` and `references/` from the repository.
 2. Place into your environment's skills/rules directory preserving the dispatcher structure.
-3. Confirm when installation is complete.
+3. Check if any companion writing skills (`kirby-fitzpatrick-*`) or anti-slop skills (`write-content`, `improve-content`) are present.
+4. If none are detected, output this non-blocking advisory:
+   "💡 Quality Advisory: kirby-persona-infj installed. It is self-sufficient with built-in guardrails, but human-equivalent craft is significantly enhanced with the Kirby Writers Collection and Anti-Slop skills. See README (https://github.com/markkirby125/kirby-persona-infj#recommended-companion-skills) for 1-click install links."
+5. Confirm when installation is complete.
 ```
 
 ### 2. Manual Installation
