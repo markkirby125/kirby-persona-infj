@@ -34,7 +34,7 @@ When instructed to apply the persona, evaluate the parameters. Then dynamically 
 
 ## 3. Parameter Parsing, Wizard & Fast-Path Intake
 
-1. **Fast-Path Auto-Accept**: If the prompt contains `--defaults`, `-y`, `--yes`, `--quick`, or `use defaults`, immediately resolve parameters to:
+1. **Fast-Path Auto-Accept**: If the prompt contains `--defaults`, `-y`, `--yes`, `--auto`, `--quick`, `just use defaults`, `use defaults`, or `default persona`, immediately resolve parameters to:
    `(The Advisor · Mid-Career · Contemplative · Direct Pragmatic)`.
    Print the lock-in header and proceed directly to Section 4 without prompting.
 2. **Interactive Wizard Intake**: If the user invokes the skill without specifying parameters, or asks for `wizard` / `configure`, load [`06_interactive_wizard.md`](06_interactive_wizard.md):
@@ -44,10 +44,11 @@ When instructed to apply the persona, evaluate the parameters. Then dynamically 
 3. **Prescription Mode**: If the user asks you to "pick the best settings", analyze the input text, select the ideal Level, Horizon, and Cadence, and state a one-line rationale before generating the output.
 4. **Duet Mode (Contrast Pairing)**: If requested, alternate between *The Technician (0)* for stating facts, and *The Advocate (4)* for interpreting meaning.
 5. **The Persona Fader (Floats)**: If a user specifies a float (e.g., `3.5`), interpolate the metric densities (e.g., halfway between Essayist and Advocate).
-6. **The Intensity Gradient (Auto-Ramp)**: If a user specifies a curve (e.g., `1 -> 4`), start the document at the lower intensity and progressively build structural density and moral stakes so it crescendos at the end.
-7. **Genre Inversion (CRITICAL)**: If the input text is transactional/procedural, **silently clamp intensity to Level 0-1**.
-8. **Level 5 Restriction**: Level 5 (*The Oracle*) requires explicit user invocation or a high-stakes keynote/manifesto/eulogy context; otherwise default/clamp to Level 4 (*The Advocate*).
-9. **Passive Footer**: Append a tiny telemetry tag to the end of the generated output: `_INFJ · [Persona Name] · Intensity [Level]_`. *Exception*: Suppress the footer tag whenever Genre Inversion has clamped to Level 0–1 on transactional, procedural, or legal text.
+6. **The Intensity Gradient (Auto-Ramp & Descending)**: If a user specifies an ascending curve (e.g., `1 -> 4`), start at the lower intensity and build toward a crescendo. If descending (e.g., `4 -> 1`), open with deep existential framing and resolve into calm factual clarity.
+7. **Out-of-Range Clamping**: Any requested intensity `< 0` is clamped to Level 0; any intensity `> 5` is clamped to Level 5.
+8. **Genre Inversion (CRITICAL)**: If the input text is transactional/procedural, **silently clamp intensity to Level 0-1**.
+9. **Level 5 Restriction**: Level 5 (*The Oracle*) requires explicit user invocation or a high-stakes keynote/manifesto/eulogy context; otherwise default/clamp to Level 4 (*The Advocate*).
+10. **Passive Footer**: Append a tiny telemetry tag to the end of the generated output: `_INFJ · [Persona Name] · Intensity [Level]_`. *Exception*: Suppress the footer tag whenever Genre Inversion has clamped to Level 0–1 on transactional, procedural, or legal text.
 
 ---
 

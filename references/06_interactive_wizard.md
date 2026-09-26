@@ -14,8 +14,8 @@ When parameters are omitted, the engine defaults to the calibrated equilibrium:
 |---|---|---|---|
 | **Q1: Persona Arc** | `intensity` | **(Recommended) The Advisor (Level 2)** | The Technician (0), The Colleague (1), The Advisor (2), The Essayist (3), The Advocate (4), The Oracle (5), Auto-pick (Prescription) |
 | **Q2: Generational Horizon** | `horizon` | **(Recommended) Mid-Career / Steward (35–50s)** | Youth / Idealist (20s), Mid-Career / Steward (35–50s), Elder / Sage (60s+) |
-| **Q3: Energy Register** | `cadence` | **(Recommended) Contemplative** | Contemplative, Pastoral / Mentor, Forensic / Architectural, Prophetic |
-| **Q4: Rhetorical Tradition** | `register` | **(Recommended) Direct Pragmatic** | Direct Pragmatic, Litotes / Restrained, High-Context Harmonic, Communal Oratorical, Lyrical / Atmospheric |
+| **Q3: Rhetorical Cadence** | `cadence` | **(Recommended) Direct Pragmatic** | Direct Pragmatic, Litotes / Restrained, High-Context Harmonic, Communal Oratorical, Lyrical / Atmospheric |
+| **Q4: Energy Register** | `register` | **(Recommended) Contemplative** | Contemplative, Pastoral / Mentor, Forensic / Architectural, Prophetic |
 
 ---
 
@@ -55,17 +55,17 @@ If the environment provides an interactive UI modal tool (e.g., Antigravity `ask
     - `(Recommended) Mid-Career / Steward (35–50s) — Second-order effects, sustainable architecture`
     - `Youth / Idealist (20s) — Future-forward momentum, tech-native idioms`
     - `Elder / Sage (60s+) — Historical parallax, multi-generational cycles, aphoristic calm`
-  - **Question 3**: "Which Energy & Temperament Register?"
-    - `(Recommended) Contemplative — Spacious, questions left to breathe (Adagio)`
-    - `Pastoral / Mentor — Warm, supportive guidance, growth metaphors (Andante)`
-    - `Forensic / Architectural — Cool, sharp, evidence-driven scrutiny (Moderato)`
-    - `Prophetic — Soaring, urgent, high moral stakes (Crescendo)`
-  - **Question 4**: "Which Rhetorical Tradition Cadence?"
+  - **Question 3**: "Which Rhetorical Tradition Cadence?"
     - `(Recommended) Direct Pragmatic — Transparent honesty, optimistic resolve, accessible warmth`
     - `Litotes / Restrained — British understatement, dry irony, courteous reticence`
     - `High-Context Harmonic — Relational equilibrium, deference over dogmatism, collective harmony`
     - `Communal Oratorical — Proverbial architecture, call-and-response rhythm, gravitas`
     - `Lyrical / Atmospheric — Celtic/Irish poetic rhythm, mythic undertones`
+  - **Question 4**: "Which Energy & Temperament Register?"
+    - `(Recommended) Contemplative — Spacious, questions left to breathe (Adagio)`
+    - `Pastoral / Mentor — Warm, supportive guidance, growth metaphors (Andante)`
+    - `Forensic / Architectural — Cool, sharp, evidence-driven scrutiny (Moderato)`
+    - `Prophetic — Soaring, urgent, high moral stakes (Crescendo)`
 
 ---
 
@@ -77,8 +77,8 @@ If no modal tool is present (e.g., Claude Code, Cursor chat, Windsurf terminal, 
 
 1. Persona Arc:    [1] The Advisor (Recommended)  [2] The Colleague  [3] The Essayist  [4] The Advocate  [5] The Technician  [6] The Oracle  [7] Auto-pick
 2. Horizon:        [1] Mid-Career / Steward (Recommended)  [2] Youth / Idealist  [3] Elder / Sage
-3. Energy:         [1] Contemplative (Recommended)  [2] Pastoral  [3] Forensic  [4] Prophetic
-4. Cadence:        [1] Direct Pragmatic (Recommended)  [2] Litotes  [3] High-Context  [4] Communal  [5] Lyrical
+3. Cadence:        [1] Direct Pragmatic (Recommended)  [2] Litotes  [3] High-Context  [4] Communal  [5] Lyrical
+4. Energy:         [1] Contemplative (Recommended)  [2] Pastoral  [3] Forensic  [4] Prophetic
 
 Reply with your choices (e.g., "1=3, 4=2"), or hit Enter / type "default" to accept all.
 ```
