@@ -2,6 +2,8 @@
 
 Injects an authentic INFJ (Ni-Fe-Ti-Se) cognitive persona into any writing style with tunable intensity, age, cultural, and energy vectors.
 
+Features the **Persona Arc** for intuitive intensity mapping (The Colleague, The Advisor, The Advocate, etc.) and supports interactive discovery (`help`), Persona Fading (floats), and Intensity Gradients (e.g., `1 -> 4`).
+
 ### 🪄 The Magic Prompt
 Copy and paste this into any AI coding app (Cursor, Windsurf, Claude Code, Grok, Kimi, Reasonix):
 

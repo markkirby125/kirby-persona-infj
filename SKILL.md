@@ -1,13 +1,13 @@
 ---
 name: kirby-persona-infj
-description: "Injects an authentic INFJ (Ni-Fe-Ti-Se) cognitive persona into any writing style with tunable intensity and rhetorical vectors."
+description: "Injects an authentic INFJ (Ni-Fe-Ti-Se) cognitive persona into any writing style with tunable intensity (0-5, float, or gradient) and rhetorical vectors."
 category: "Writing & Communication"
 triggers:
   - "infj persona"
   - "infj writing style"
   - "counselor persona"
-  - "philosophical tone"
-  - "empathetic analytical writing"
+  - "kirby-persona-infj help"
+  - "infj ?intensity"
 risk: unverified
 author: william-fitzpatrick
 tags: [kirby, ai-agent, workflow, writing]
@@ -22,9 +22,12 @@ tags: [kirby, ai-agent, workflow, writing]
 > [`references/00_dispatcher.md`](references/00_dispatcher.md)
 
 ## Examples
-- "Rewrite this technical memo with INFJ Intensity 2, Mid-Career, British Understatement."
-- "Apply INFJ Intensity 4 in Contemplative register to this essay draft."
+- "Use kirby-persona-infj help" (Displays the Cheat Sheet)
+- "Rewrite this technical memo as The Colleague, British Understatement."
+- "Apply INFJ Intensity 3.5 in Contemplative register to this essay draft."
+- "Rewrite this speech with an INFJ gradient of 1 -> 4 (Colleague to Advocate)."
+- "Rewrite this launch announcement using INFJ prescription mode (pick the best settings for me)."
 
 ## Limitations
-- Automatically clamps to Level 0–1 on purely transactional, procedural, or legal texts.
+- Automatically clamps to Level 0–1 (The Technician / Colleague) on purely transactional, procedural, or legal texts.
 - Prohibits uninstantiated mysticism, horoscope phrasing, and melodramatic therapeutic slop.
