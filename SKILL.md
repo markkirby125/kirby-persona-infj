@@ -7,6 +7,7 @@ triggers:
   - "infj writing style"
   - "counselor persona"
   - "kirby-persona-infj help"
+  - "kirby-persona-infj wizard"
 risk: unverified
 author: william-fitzpatrick
 tags: [kirby, ai-agent, workflow, writing]
@@ -21,7 +22,8 @@ tags: [kirby, ai-agent, workflow, writing]
 > [`references/00_dispatcher.md`](references/00_dispatcher.md)
 
 ## Examples
-- "Use kirby-persona-infj help" (Displays the Cheat Sheet)
+- "kirby-persona-infj --defaults" (Skip wizard, use defaults)
+- "kirby-persona-infj wizard" (Launch interactive parameter intake)
 - "Rewrite this technical memo as The Colleague, British Understatement."
 - "Apply INFJ gradient of 1 -> 4 (Colleague to Advocate) to this speech."
 

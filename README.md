@@ -108,23 +108,35 @@ git clone https://github.com/markkirby125/kirby-persona-infj.git ~/.gemini/confi
 
 ## Usage Examples
 
-### 1. Quick Discovery (Cheat Sheet)
+### 1. Fast-Path Auto-Accept (Instant Execution)
+```text
+"Rewrite this memo using kirby-persona-infj --defaults"
+```
+*Skips questionnaire and instantly locks in: The Advisor · Mid-Career · Contemplative · Direct Pragmatic.*
+
+### 2. Interactive Wizard Mode (Step-by-Step Questionnaire)
+```text
+kirby-persona-infj wizard
+```
+*Triggers the interactive parameter intake. Press Enter or click (Recommended) to accept defaults.*
+
+### 3. Quick Discovery (Cheat Sheet)
 ```text
 kirby-persona-infj help
 ```
 *Outputs the complete 6-row Persona Arc table with use-case guidance.*
 
-### 2. Strategic Engineering Proposal
+### 4. Strategic Engineering Proposal
 ```text
 "Rewrite this proposal memo using kirby-persona-infj as The Advisor, Mid-Career horizon, Litotes cadence."
 ```
 
-### 3. Keynote Speech with an Auto-Ramp Gradient
+### 5. Keynote Speech with an Auto-Ramp Gradient
 ```text
 "Apply kirby-persona-infj with a gradient of 1 -> 4 (Colleague to Advocate) in Lyrical register to this speech draft."
 ```
 
-### 4. Let the Skill Decide
+### 6. Let the Skill Decide
 ```text
 "Rewrite this launch announcement using kirby-persona-infj prescription mode."
 ```
@@ -144,7 +156,8 @@ kirby-persona-infj/
     ├── 02_intensity_metrics.md       # Measurable thresholds for The Persona Arc
     ├── 03_rhetorical_vectors.md      # Generational horizons & rhetorical cadences
     ├── 04_guardrails_and_lexicon.md  # Ti Inversion gate & banned slop lexicons
-    └── 05_fitzpatrick_integration.md # Topic-Comment, Locomotive & Cathedral mappings
+    ├── 05_fitzpatrick_integration.md # Topic-Comment, Locomotive & Cathedral mappings
+    └── 06_interactive_wizard.md      # Interactive questionnaire & fast-path engine
 ```
 
 ---
