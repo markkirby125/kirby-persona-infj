@@ -22,8 +22,8 @@ tags: [kirby, ai-agent, workflow, writing]
 > [`references/00_dispatcher.md`](references/00_dispatcher.md)
 
 ## Examples
-- "kirby-persona-infj --defaults" (Skip wizard, use defaults)
-- "kirby-persona-infj wizard" (Launch interactive parameter intake)
+- "kirby-persona-infj --simple" (Skip wizard, apply instant defaults)
+- "kirby-persona-infj wizard" (Launch Step 0 Simple/Advanced setup)
 - "Rewrite this technical memo as The Colleague, British Understatement."
 - "Apply INFJ gradient of 1 -> 4 (Colleague to Advocate) to this speech."
 

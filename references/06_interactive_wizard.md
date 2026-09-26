@@ -1,6 +1,6 @@
 # Interactive Wizard Protocol & Fast-Path Engine
 
-**Parent Collection**: [Master Collection](../../kirby-fitzpatrick-writers-collection/SKILL.md) | [Dispatcher](00_dispatcher.md)
+**Parent Collection**: [Master Collection](../../kirby-fitzpatrick-writers-collection/SKILL.md) | [Dispatcher](00_dispatcher.md) | [Use-Case Recipes](../docs/use_case_recipes.md)
 
 This protocol governs interactive parameter intake when a user invokes `kirby-persona-infj` without specifying explicit parameters.
 
@@ -19,53 +19,79 @@ When parameters are omitted, the engine defaults to the calibrated equilibrium:
 
 ---
 
-## 2. Fast-Path Auto-Accept
+## 2. Fast-Path Auto-Accept (Bypassing the Wizard)
 
 ### Trigger Detection
 Evaluate the user prompt before starting any questionnaire:
-* **Flag triggers**: `--defaults`, `-y`, `--yes`, `--auto`, `--quick`
-* **Natural language**: `just use defaults`, `use defaults`, `default persona`
+* **Simple flags**: `--simple`, `-s`, `--defaults`, `-y`, `--yes`, `--auto`, `--quick`
+* **Natural language**: `simple infj`, `just use defaults`, `use defaults`, `default persona`
 * **Prescription shorthand**: `surprise me`, `pick for me`, `auto settings` (resolves to Prescription Mode)
 
 ### Auto-Accept Resolution
 Immediately resolve to `(The Advisor · Mid-Career · Contemplative · Direct Pragmatic)`. Print the lock-in line:
-> `_INFJ Persona Locked: The Advisor (L2) · Mid-Career · Contemplative · Direct Pragmatic. (Re-run with 'wizard' or 'configure' to customize)._`
+> `_INFJ Persona Locked: The Advisor (L2) · Mid-Career · Contemplative · Direct Pragmatic. (Re-run with '--advanced' to customize)._`
 
 Then proceed straight to the cognitive pipeline. Do not prompt any questions.
 
 ---
 
-## 3. Multi-Environment Execution Tiers
+## 3. Curated 1-Click Archetype Presets
+
+When users want a fast, high-impact configuration without answering 4 questions:
+
+1. **Strategic Work / Proposals** (`--preset work`):
+   * *Tuple*: The Advisor (L2) · Mid-Career · Forensic / Architectural · Direct Pragmatic
+   * *Ideal for*: Strategy memos, client proposals, architectural specs, project escalations.
+2. **Essay / Thought Leadership** (`--preset essay`):
+   * *Tuple*: The Essayist (L3) · Mid-Career · Contemplative · Lyrical / Atmospheric
+   * *Ideal for*: Editorial essays, newsletters, articles, founder reflections.
+3. **Team & Code Reviews** (`--preset team`):
+   * *Tuple*: The Colleague (L1) · Mid-Career · Pastoral / Mentor · Direct Pragmatic
+   * *Ideal for*: Peer PR reviews, design doc critiques, team announcements, post-mortems.
+
+*(For detailed real-world scenarios, consult [`docs/use_case_recipes.md`](../docs/use_case_recipes.md)).*
+
+---
+
+## 4. Multi-Environment Execution Tiers (The Step 0 Fork)
 
 ### Tier A: Native Modal Tool (`ask_question`)
 If the environment provides an interactive UI modal tool (e.g., Antigravity `ask_question` or IDE GUI pickers):
-* Call `ask_question` with the 4 questions in order (or batched if supported).
-* Always place the default option first, prefixed with `(Recommended)`.
-* When the user clicks or presses Enter on `(Recommended)`, the default is confirmed instantly.
-* Example modal schema:
-  - **Question 1**: "Which Persona Arc intensity would you like to apply?"
-    - `(Recommended) The Advisor (Level 2) — Strategic empath, 'Not-X, but-PATTERN' logic`
-    - `The Colleague (Level 1) — Professional with a heartbeat, subtle teleology`
-    - `The Essayist (Level 3) — Reflective thought leadership, Cathedral structure`
-    - `The Advocate (Level 4) — Intimate, profound existential framing`
-    - `The Technician (Level 0) — Zero persona, crisp linear facts`
-    - `The Oracle (Level 5) — High moral gravity, generational scope`
-    - `Auto-pick — Prescription mode (analyze text and pick for me)`
-  - **Question 2**: "Which Generational Horizon fits the vantage point?"
-    - `(Recommended) Mid-Career / Steward (35–50s) — Second-order effects, sustainable architecture`
-    - `Youth / Idealist (20s) — Future-forward momentum, tech-native idioms`
-    - `Elder / Sage (60s+) — Historical parallax, multi-generational cycles, aphoristic calm`
-  - **Question 3**: "Which Rhetorical Tradition Cadence?"
-    - `(Recommended) Direct Pragmatic — Transparent honesty, optimistic resolve, accessible warmth`
-    - `Litotes / Restrained — British understatement, dry irony, courteous reticence`
-    - `High-Context Harmonic — Relational equilibrium, deference over dogmatism, collective harmony`
-    - `Communal Oratorical — Proverbial architecture, call-and-response rhythm, gravitas`
-    - `Lyrical / Atmospheric — Celtic/Irish poetic rhythm, mythic undertones`
-  - **Question 4**: "Which Energy & Temperament Register?"
-    - `(Recommended) Contemplative — Spacious, questions left to breathe (Adagio)`
-    - `Pastoral / Mentor — Warm, supportive guidance, growth metaphors (Andante)`
-    - `Forensic / Architectural — Cool, sharp, evidence-driven scrutiny (Moderato)`
-    - `Prophetic — Soaring, urgent, high moral stakes (Crescendo)`
+
+1. **Step 0: Gating Fork Modal**:
+   * **Question 0**: "How would you like to set up the INFJ Persona?"
+     - `(Recommended) Simple Mode — Apply balanced defaults immediately & start writing`
+     - `1-Click Presets — Pick a curated use-case archetype (Work / Essay / Team)`
+     - `Advanced Mode — Open full 4-step customization wizard (Intensity, Horizon, Cadence, Energy)`
+   * **Resolution**:
+     - *If Simple Mode selected*: Resolve canonical defaults and proceed straight to execution (zero further questions).
+     - *If 1-Click Presets selected*: Prompt a 1-question selector for Work, Essay, or Team.
+     - *If Advanced Mode selected*: Render Questions 1 through 4 sequentially.
+
+2. **Advanced Mode Sequence (Questions 1–4)**:
+   - **Question 1 (Persona Arc)**:
+     - `(Recommended) The Advisor (Level 2) — Strategic empath, 'Not-X, but-PATTERN' logic`
+     - `The Colleague (Level 1) — Professional with a heartbeat, subtle teleology`
+     - `The Essayist (Level 3) — Reflective thought leadership, Cathedral structure`
+     - `The Advocate (Level 4) — Intimate, profound existential framing`
+     - `The Technician (Level 0) — Zero persona, crisp linear facts`
+     - `The Oracle (Level 5) — High moral gravity, generational scope`
+     - `Auto-pick — Prescription mode (analyze text and pick for me)`
+   - **Question 2 (Generational Horizon)**:
+     - `(Recommended) Mid-Career / Steward (35–50s) — Second-order effects, sustainability`
+     - `Youth / Idealist (20s) — Future-forward momentum, tech-native idioms`
+     - `Elder / Sage (60s+) — Historical parallax, multi-generational cycles`
+   - **Question 3 (Rhetorical Cadence)**:
+     - `(Recommended) Direct Pragmatic — Transparent honesty, accessible warmth`
+     - `Litotes / Restrained — British understatement, dry irony, courteous reticence`
+     - `High-Context Harmonic — Relational equilibrium, collective harmony`
+     - `Communal Oratorical — Proverbial architecture, call-and-response rhythm`
+     - `Lyrical / Atmospheric — Celtic/Irish poetic rhythm, mythic undertones`
+   - **Question 4 (Energy Register)**:
+     - `(Recommended) Contemplative — Spacious, questions left to breathe (Adagio)`
+     - `Pastoral / Mentor — Warm, supportive guidance, growth metaphors (Andante)`
+     - `Forensic / Architectural — Cool, sharp, evidence-driven scrutiny (Moderato)`
+     - `Prophetic — Soaring, urgent, high moral stakes (Crescendo)`
 
 ---
 
@@ -73,34 +99,25 @@ If the environment provides an interactive UI modal tool (e.g., Antigravity `ask
 If no modal tool is present (e.g., Claude Code, Cursor chat, Windsurf terminal, Kimi, Reasonix), output a single compact batched questionnaire:
 
 ```text
-🧠 INFJ Persona Wizard — Press Enter (blank reply) to accept all recommended defaults, or pick your numbers:
+🧠 INFJ Persona Setup — Choose a mode (Press Enter for Simple Mode):
 
-1. Persona Arc:    [1] The Advisor (Recommended)  [2] The Colleague  [3] The Essayist  [4] The Advocate  [5] The Technician  [6] The Oracle  [7] Auto-pick
-2. Horizon:        [1] Mid-Career / Steward (Recommended)  [2] Youth / Idealist  [3] Elder / Sage
-3. Cadence:        [1] Direct Pragmatic (Recommended)  [2] Litotes  [3] High-Context  [4] Communal  [5] Lyrical
-4. Energy:         [1] Contemplative (Recommended)  [2] Pastoral  [3] Forensic  [4] Prophetic
+[1] Simple Mode (Recommended) — Apply balanced defaults and write immediately
+[2] 1-Click Presets — Pick Work, Essay, or Team presets
+[3] Advanced Wizard — Customize all 4 parameters (Intensity, Horizon, Cadence, Energy)
 
-Reply with your choices (e.g., "1=3, 4=2"), or hit Enter / type "default" to accept all.
+Reply '1' or press Enter to proceed with Simple Mode, or '3' for Advanced:
 ```
 
 * **Parsing Rules**:
-  - Blank reply or `default` / `d` / `y` $\rightarrow$ Accepts all 4 recommended defaults.
-  - Comma-separated or space-separated numbers map directly.
-  - Partial inputs only prompt for the missing fields (**Parameter Differential Prompting**).
-
----
-
-## 4. Parameter Differential Prompting
-If the user specifies *some* parameters in their initial prompt (e.g., `"Rewrite this memo using kirby-persona-infj as The Advocate"`):
-1. Extract the specified parameter (`intensity = 4 / The Advocate`).
-2. Skip Question 1.
-3. Only prompt for the remaining missing parameters (Horizon, Energy, Cadence), with defaults pre-selected.
+  - Blank reply or `1` / `simple` / `default` / `d` / `y` $\rightarrow$ Accepts Simple Mode immediately (zero further prompts).
+  - If `3` or `advanced` is replied $\rightarrow$ Displays Questions 1–4.
+  - Partial inputs apply **Parameter Differential Prompting** (prompts only for missing keys).
 
 ---
 
 ## 5. Lock-In & Transition
 Once parameters are resolved (via fast-path, modal tool, or conversational CLI):
 1. Print the lock-in header:
-   > `_INFJ Persona Locked: [Persona Arc] · [Horizon] · [Energy] · [Cadence]_`
+   > `_INFJ Persona Locked: [Persona Arc] · [Horizon] · [Cadence] · [Energy] · Tip: Run with '--advanced' to customize._`
 2. Load [`01_cognitive_pipeline.md`](01_cognitive_pipeline.md) and [`05_fitzpatrick_integration.md`](05_fitzpatrick_integration.md).
 3. Execute the $\text{Ni} \rightarrow \text{Fe} \rightarrow \text{Ti} \rightarrow \text{Se}$ pipeline.

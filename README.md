@@ -132,35 +132,41 @@ git clone https://github.com/markkirby125/kirby-persona-infj.git ~/.gemini/confi
 
 ## Usage Examples
 
-### 1. Fast-Path Auto-Accept (Instant Execution)
+### 1. Fast-Path Simple Mode (Instant Execution)
 ```text
-"Rewrite this memo using kirby-persona-infj --defaults"
+"Rewrite this memo using kirby-persona-infj --simple"
 ```
-*Skips questionnaire and instantly locks in: The Advisor · Mid-Career · Contemplative · Direct Pragmatic.*
+*Bypasses all prompts and immediately locks in canonical defaults (The Advisor · Mid-Career · Contemplative · Direct Pragmatic).*
 
-### 2. Interactive Wizard Mode (Step-by-Step Questionnaire)
+### 2. Interactive Wizard Mode (Step 0 Fork: Simple vs. Advanced)
 ```text
 kirby-persona-infj wizard
 ```
-*Triggers the interactive parameter intake. Press Enter or click (Recommended) to accept defaults.*
+*Launches Step 0. Press Enter or click (Recommended) for Simple Mode, or choose Advanced for full 4-step customization.*
 
-### 3. Quick Discovery (Cheat Sheet)
+### 3. Curated 1-Click Presets
+```text
+"Apply kirby-persona-infj --preset work to this proposal"
+"Apply kirby-persona-infj --preset essay to this newsletter"
+"Apply kirby-persona-infj --preset team to this PR review"
+```
+
+### 4. Real-World Use-Case Recipes & Prescriptions
+For comprehensive real-world communication templates—including **peer code/PR reviews, design document critiques, 360 performance reviews, client scope pushback, executive delay escalations, outage post-mortems, and investor updates**—consult the dedicated recipe book:
+👉 [**docs/use_case_recipes.md**](docs/use_case_recipes.md)
+
+### 5. Quick Discovery (Cheat Sheet)
 ```text
 kirby-persona-infj help
 ```
 *Outputs the complete 6-row Persona Arc table with use-case guidance.*
 
-### 4. Strategic Engineering Proposal
-```text
-"Rewrite this proposal memo using kirby-persona-infj as The Advisor, Mid-Career horizon, Litotes cadence."
-```
-
-### 5. Keynote Speech with an Auto-Ramp Gradient
+### 6. Keynote Speech with an Auto-Ramp Gradient
 ```text
 "Apply kirby-persona-infj with a gradient of 1 -> 4 (Colleague to Advocate) in Lyrical register to this speech draft."
 ```
 
-### 6. Let the Skill Decide
+### 7. Let the Skill Decide
 ```text
 "Rewrite this launch announcement using kirby-persona-infj prescription mode."
 ```
@@ -173,7 +179,10 @@ kirby-persona-infj help
 kirby-persona-infj/
 ├── SKILL.md                          # Hollow shell dispatcher (≤ 200 tokens)
 ├── README.md                         # Project documentation & manual
+├── LICENSE                           # MIT License
 ├── .gitignore                        # Standard exclusions
+├── docs/
+│   └── use_case_recipes.md           # 11+ real-world communication recipes & prescription table
 └── references/
     ├── 00_dispatcher.md              # Master lazy-loading router & parameter parser
     ├── 01_cognitive_pipeline.md      # Strict Ni ➔ Fe ➔ Ti ➔ Se I/O contracts
@@ -181,7 +190,7 @@ kirby-persona-infj/
     ├── 03_rhetorical_vectors.md      # Generational horizons & rhetorical cadences
     ├── 04_guardrails_and_lexicon.md  # Ti Inversion gate & banned slop lexicons
     ├── 05_fitzpatrick_integration.md # Topic-Comment, Locomotive & Cathedral mappings
-    └── 06_interactive_wizard.md      # Interactive questionnaire & fast-path engine
+    └── 06_interactive_wizard.md      # Step 0 fork, Simple/Advanced wizard & presets
 ```
 
 ---

@@ -29,18 +29,23 @@ When instructed to apply the persona, evaluate the parameters. Then dynamically 
 * **Guardrails**: [`04_guardrails_and_lexicon.md`](04_guardrails_and_lexicon.md)
 * **Structural Integration**: [`05_fitzpatrick_integration.md`](05_fitzpatrick_integration.md)
 * **Interactive Wizard**: [`06_interactive_wizard.md`](06_interactive_wizard.md) (Load if parameters are missing)
+* **Use-Case Recipes & Prescriptions**: [`../docs/use_case_recipes.md`](../docs/use_case_recipes.md) (Cheat sheet for PR reviews, emails, and post-mortems)
 
 ---
 
 ## 3. Parameter Parsing, Wizard & Fast-Path Intake
 
-1. **Fast-Path Auto-Accept**: If the prompt contains `--defaults`, `-y`, `--yes`, `--auto`, `--quick`, `just use defaults`, `use defaults`, or `default persona`, immediately resolve parameters to:
+1. **Fast-Path Simple Auto-Accept**: If the prompt contains `--simple`, `-s`, `--defaults`, `-y`, `--yes`, `--auto`, `--quick`, `simple infj`, `just use defaults`, `use defaults`, or `default persona`, immediately resolve parameters to:
    `(The Advisor · Mid-Career · Contemplative · Direct Pragmatic)`.
    Print the lock-in header and proceed directly to Section 4 without prompting.
-2. **Interactive Wizard Intake**: If the user invokes the skill without specifying parameters, or asks for `wizard` / `configure`, load [`06_interactive_wizard.md`](06_interactive_wizard.md):
-   - **Modal Tool Environment** (e.g., Antigravity `ask_question`): Call `ask_question` with `(Recommended)` defaults listed first.
-   - **Conversational CLI Environment** (e.g., Claude Code, Cursor, Windsurf, Kimi, Reasonix): Output the compact batched questionnaire where Enter accepts all defaults.
+2. **Interactive Wizard Intake (Step 0 Fork)**: If the user invokes the skill without specifying parameters, or asks for `wizard` / `configure`, load [`06_interactive_wizard.md`](06_interactive_wizard.md):
+   - **Step 0 Fork**: Present `Simple Mode (defaults)`, `1-Click Presets (Work/Essay/Team)`, and `Advanced Mode (full 4-step wizard)`. In both modal and CLI environments, hitting Enter or blank response defaults to Simple Mode.
    - **Partial Parameters**: Apply Parameter Differential Prompting (prompt only for missing keys).
+3. **1-Click Archetype Presets**: If requested via `--preset <name>`:
+   - `--preset work`: The Advisor (L2) · Mid-Career · Forensic · Direct Pragmatic
+   - `--preset essay`: The Essayist (L3) · Mid-Career · Contemplative · Lyrical
+   - `--preset team`: The Colleague (L1) · Mid-Career · Pastoral · Direct Pragmatic
+   *(See [`../docs/use_case_recipes.md`](../docs/use_case_recipes.md) for full recipe library).*
 3. **Prescription Mode**: If the user asks you to "pick the best settings", analyze the input text, select the ideal Level, Horizon, and Cadence, and state a one-line rationale before generating the output.
 4. **Duet Mode (Contrast Pairing)**: If requested, alternate between *The Technician (0)* for stating facts, and *The Advocate (4)* for interpreting meaning.
 5. **The Persona Fader (Floats)**: If a user specifies a float (e.g., `3.5`), interpolate the metric densities (e.g., halfway between Essayist and Advocate).
