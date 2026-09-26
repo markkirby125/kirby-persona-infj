@@ -16,6 +16,7 @@ When parameters are omitted, the engine defaults to the calibrated equilibrium:
 | **Q2: Generational Horizon** | `horizon` | **(Recommended) Mid-Career / Steward (35–50s)** | Youth / Idealist (20s), Mid-Career / Steward (35–50s), Elder / Sage (60s+) |
 | **Q3: Rhetorical Cadence** | `cadence` | **(Recommended) Direct Pragmatic** | Direct Pragmatic, Litotes / Restrained, High-Context Harmonic, Communal Oratorical, Lyrical / Atmospheric |
 | **Q4: Energy Register** | `register` | **(Recommended) Contemplative** | Contemplative, Pastoral / Mentor, Forensic / Architectural, Prophetic |
+| **Q5: Spelling / Locale** | `locale` | **(Recommended) British English (UK)** | British English (UK), American English (US) |
 
 ---
 
@@ -28,8 +29,10 @@ Evaluate the user prompt before starting any questionnaire:
 * **Prescription shorthand**: `surprise me`, `pick for me`, `auto settings` (resolves to Prescription Mode)
 
 ### Auto-Accept Resolution
-Immediately resolve to `(The Advisor · Mid-Career · Contemplative · Direct Pragmatic)`. Print the lock-in line:
-> `_INFJ Persona Locked: The Advisor (L2) · Mid-Career · Contemplative · Direct Pragmatic. (Re-run with '--advanced' to customize)._`
+Immediately resolve to `(The Advisor · Mid-Career · Contemplative · Direct Pragmatic · British English)`.
+*Override Locale*: If `--us` or `--american` is present, resolve locale to `American English`.
+Print the lock-in line:
+> `_INFJ Persona Locked: The Advisor (L2) · Mid-Career · Contemplative · Direct Pragmatic · British English · Tip: Run with '--advanced' to customize._`
 
 Then proceed straight to the cognitive pipeline. Do not prompt any questions.
 
@@ -37,19 +40,19 @@ Then proceed straight to the cognitive pipeline. Do not prompt any questions.
 
 ## 3. Curated 1-Click Archetype Presets
 
-When users want a fast, high-impact configuration without answering 4 questions:
+When users want a fast, high-impact configuration without answering 5 questions:
 
 1. **Strategic Work / Proposals** (`--preset work`):
-   * *Tuple*: The Advisor (L2) · Mid-Career · Forensic / Architectural · Direct Pragmatic
+   * *Tuple*: The Advisor (L2) · Mid-Career · Forensic / Architectural · Direct Pragmatic · British English
    * *Ideal for*: Strategy memos, client proposals, architectural specs, project escalations.
 2. **Essay / Thought Leadership** (`--preset essay`):
-   * *Tuple*: The Essayist (L3) · Mid-Career · Contemplative · Lyrical / Atmospheric
+   * *Tuple*: The Essayist (L3) · Mid-Career · Contemplative · Lyrical / Atmospheric · British English
    * *Ideal for*: Editorial essays, newsletters, articles, founder reflections.
 3. **Team & Code Reviews** (`--preset team`):
-   * *Tuple*: The Colleague (L1) · Mid-Career · Pastoral / Mentor · Direct Pragmatic
+   * *Tuple*: The Colleague (L1) · Mid-Career · Pastoral / Mentor · Direct Pragmatic · British English
    * *Ideal for*: Peer PR reviews, design doc critiques, team announcements, post-mortems.
 
-*(For detailed real-world scenarios, consult [`docs/use_case_recipes.md`](../docs/use_case_recipes.md)).*
+*(Override Locale with `--us` if provided. For detailed real-world scenarios, consult [`docs/use_case_recipes.md`](../docs/use_case_recipes.md)).*
 
 ---
 
@@ -62,13 +65,13 @@ If the environment provides an interactive UI modal tool (e.g., Antigravity `ask
    * **Question 0**: "How would you like to set up the INFJ Persona?"
      - `(Recommended) Simple Mode — Apply balanced defaults immediately & start writing`
      - `1-Click Presets — Pick a curated use-case archetype (Work / Essay / Team)`
-     - `Advanced Mode — Open full 4-step customization wizard (Intensity, Horizon, Cadence, Energy)`
+     - `Advanced Mode — Open full 5-step customization wizard (Intensity, Horizon, Cadence, Energy, Locale)`
    * **Resolution**:
      - *If Simple Mode selected*: Resolve canonical defaults and proceed straight to execution (zero further questions).
      - *If 1-Click Presets selected*: Prompt a 1-question selector for Work, Essay, or Team.
-     - *If Advanced Mode selected*: Render Questions 1 through 4 sequentially.
+     - *If Advanced Mode selected*: Render Questions 1 through 5 sequentially.
 
-2. **Advanced Mode Sequence (Questions 1–4)**:
+2. **Advanced Mode Sequence (Questions 1–5)**:
    - **Question 1 (Persona Arc)**:
      - `(Recommended) The Advisor (Level 2) — Strategic empath, 'Not-X, but-PATTERN' logic`
      - `The Colleague (Level 1) — Professional with a heartbeat, subtle teleology`
@@ -92,6 +95,9 @@ If the environment provides an interactive UI modal tool (e.g., Antigravity `ask
      - `Pastoral / Mentor — Warm, supportive guidance, growth metaphors (Andante)`
      - `Forensic / Architectural — Cool, sharp, evidence-driven scrutiny (Moderato)`
      - `Prophetic — Soaring, urgent, high moral stakes (Crescendo)`
+   - **Question 5 (Spelling / Locale)**:
+     - `(Recommended) British English (UK) — Default spelling (e.g., colour, organise)`
+     - `American English (US) — (e.g., color, organize)`
 
 ---
 
@@ -103,14 +109,14 @@ If no modal tool is present (e.g., Claude Code, Cursor chat, Windsurf terminal, 
 
 [1] Simple Mode (Recommended) — Apply balanced defaults and write immediately
 [2] 1-Click Presets — Pick Work, Essay, or Team presets
-[3] Advanced Wizard — Customize all 4 parameters (Intensity, Horizon, Cadence, Energy)
+[3] Advanced Wizard — Customize all 5 parameters (Intensity, Horizon, Cadence, Energy, Locale)
 
 Reply '1' or press Enter to proceed with Simple Mode, or '3' for Advanced:
 ```
 
 * **Parsing Rules**:
   - Blank reply or `1` / `simple` / `default` / `d` / `y` $\rightarrow$ Accepts Simple Mode immediately (zero further prompts).
-  - If `3` or `advanced` is replied $\rightarrow$ Displays Questions 1–4.
+  - If `3` or `advanced` is replied $\rightarrow$ Displays Questions 1–5.
   - Partial inputs apply **Parameter Differential Prompting** (prompts only for missing keys).
 
 ---
@@ -118,6 +124,6 @@ Reply '1' or press Enter to proceed with Simple Mode, or '3' for Advanced:
 ## 5. Lock-In & Transition
 Once parameters are resolved (via fast-path, modal tool, or conversational CLI):
 1. Print the lock-in header:
-   > `_INFJ Persona Locked: [Persona Arc] · [Horizon] · [Cadence] · [Energy] · Tip: Run with '--advanced' to customize._`
+   > `_INFJ Persona Locked: [Persona Arc] · [Horizon] · [Cadence] · [Energy] · [Locale] · Tip: Run with '--advanced' to customize._`
 2. Load [`01_cognitive_pipeline.md`](01_cognitive_pipeline.md) and [`05_fitzpatrick_integration.md`](05_fitzpatrick_integration.md).
 3. Execute the $\text{Ni} \rightarrow \text{Fe} \rightarrow \text{Ti} \rightarrow \text{Se}$ pipeline.

@@ -4,6 +4,8 @@
 **Parent Collection**: [Kirby Skills Writers Collection](https://github.com/markkirby125/kirby-fitzpatrick-writers-collection)  
 **Parent Engine**: [Master Dispatcher](../references/00_dispatcher.md)
 
+> **🌍 Locale Note**: All tuples and prescriptions in this playbook default to **British English**. To enforce American spelling across any recipe, append the `--us` or `--american` override flag.
+
 ---
 
 ## 🎯 Quick-Reference Prescription Table

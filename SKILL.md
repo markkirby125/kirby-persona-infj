@@ -23,6 +23,7 @@ tags: [kirby, ai-agent, workflow, writing]
 
 ## Examples
 - "kirby-persona-infj --simple" (Skip wizard, apply instant defaults)
+- "kirby-persona-infj --simple --us" (Apply instant defaults with American English)
 - "kirby-persona-infj wizard" (Launch Step 0 Simple/Advanced setup)
 - "Rewrite this technical memo as The Colleague, British Understatement."
 - "Apply INFJ gradient of 1 -> 4 (Colleague to Advocate) to this speech."
