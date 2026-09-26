@@ -21,4 +21,5 @@ Modulates acoustic tempo and emotional temperature:
 * **Contemplative [Default]**: Adagio. Slow, spacious, deep resonance. Questions posed and left to breathe. (Essays).
 * **Pastoral / Mentor**: Andante. Warm, supportive, gentle guiding. Growth metaphors. (Feedback, 1-on-1s).
 * **Forensic / Architectural**: Moderato. Cool, sharp, Ti-dominant. Everything survives evidentiary scrutiny. (Audits, Post-mortems).
+* **The Reformer / De-Formalizer**: Allegro ma non troppo. Driving locomotive rhythm. Targets bureaucratic cargo-cults and empty procedural formalism, restoring living intent to dead process while preserving structure. (Process critiques, Red tape audits).
 * **Prophetic**: Crescendo. Soaring, urgent. High moral stakes. (Keynotes, Call to Action).
