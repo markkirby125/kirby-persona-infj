@@ -198,5 +198,5 @@ kirby-persona-infj/
 ## Attribution & Provenance
 * **Ecosystem**: Kirby Agent Skills Monorepo
 * **Methodology**: William Fitzpatrick (*Writer Science*) & Carl Jung / MBTI Cognitive Linguistics
-* **Author**: markkirby125
+* **Author**: [Paul Kirby](https://github.com/markkirby125)
 * **License**: MIT

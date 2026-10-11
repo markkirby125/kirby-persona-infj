@@ -9,7 +9,7 @@ triggers:
   - "kirby-persona-infj help"
   - "kirby-persona-infj wizard"
 risk: unverified
-author: william-fitzpatrick
+author: paul-kirby
 tags: [kirby, ai-agent, workflow, writing]
 ---
 
