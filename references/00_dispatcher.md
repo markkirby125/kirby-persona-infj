@@ -26,7 +26,7 @@ When instructed to apply the persona, evaluate the parameters. Then dynamically 
 * **Core Pipeline**: [`01_cognitive_pipeline.md`](01_cognitive_pipeline.md)
 * **Intensity Slider**: [`02_intensity_metrics.md`](02_intensity_metrics.md)
 * **Rhetorical Modulators**: [`03_rhetorical_vectors.md`](03_rhetorical_vectors.md)
-* **Guardrails**: [`04_guardrails_and_lexicon.md`](04_guardrails_and_lexicon.md)
+* **Guardrails**: [`04_guardrails_and_lexicon.md`](04_guardrails_and_lexicon.md). Published or SEO-facing text: the "Not-X, but-Y" arc is off by default (guardrails §6).
 * **Structural Integration**: [`05_fitzpatrick_integration.md`](05_fitzpatrick_integration.md)
 * **Interactive Wizard**: [`06_interactive_wizard.md`](06_interactive_wizard.md) (Load if parameters are missing)
 * **Use-Case Recipes & Prescriptions**: [`../docs/use_case_recipes.md`](../docs/use_case_recipes.md) (Cheat sheet for PR reviews, emails, and post-mortems)
