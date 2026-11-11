@@ -20,14 +20,14 @@ Intensity is governed by strict metric constraints and plain-English aliases. En
 * **Profile**: Strategic empath, "Not-X, but-PATTERN" logic.
 * **Ni Structure**: "Not-X, but-PATTERN" thesis.
 * **Fe Validation**: 1 validation beat per 400 words.
-* **Se Anchors**: 1 grounding anchor per 400 words.
+* **Se Anchors**: Up to 1 grounding anchor per 400 words, only from facts the user supplied; otherwise insert `[NEEDS FIRST-PARTY EVIDENCE]`, never an invented detail.
 * **Use Case**: Strategy memos, engineering guides, client proposals.
 
 ## Level 3: The Essayist
 * **Profile**: Full cathedral structure, conversational cadence, periodic sentences.
 * **Ni Structure**: Full Cathedral structure (Keystone, Nave, Bell Tower).
 * **Fe Validation**: 1 validation beat per 250 words. Direct "you".
-* **Se Anchors**: 1 grounding anchor per 250 words.
+* **Se Anchors**: Up to 1 grounding anchor per 250 words, only from facts the user supplied; otherwise insert `[NEEDS FIRST-PARTY EVIDENCE]`, never an invented detail.
 * **Use Case**: Thought leadership, long-form newsletters.
 
 ## Level 4: The Advocate
