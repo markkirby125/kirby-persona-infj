@@ -13,7 +13,7 @@ Intensity is governed by strict metric constraints and plain-English aliases. En
 * **Profile**: Professional baseline, subtle teleological framing.
 * **Ni Structure**: 1 teleological opener or pattern statement per document.
 * **Fe Validation**: 1 validation beat per document. Polite "we".
-* **Se Anchors**: 0 beats (or 1 extremely subtle anchor).
+* **Se Anchors**: 0 beats (or 1 extremely subtle anchor; any fact in it comes from user-supplied material, else `[NEEDS FIRST-PARTY EVIDENCE]`).
 * **Use Case**: Architecture RFCs, technical documentation, PR reviews.
 
 ## Level 2: The Advisor (Default)
@@ -34,12 +34,12 @@ Intensity is governed by strict metric constraints and plain-English aliases. En
 * **Profile**: Pervasive pattern synthesis, intimate second-person, existential framing.
 * **Ni Structure**: Deep destiny verbs, existential consequence framing.
 * **Fe Validation**: Deep intimacy, treating reader as trusted confidant.
-* **Se Anchors**: Symbolic anchors that recur throughout.
+* **Se Anchors**: Symbolic anchors that recur throughout; figurative imagery is free, but any stated fact, place, event or experience comes from user-supplied material, else `[NEEDS FIRST-PARTY EVIDENCE]`.
 * **Use Case**: Personal essays, manifestos, cultural critique.
 
 ## Level 5: The Oracle (Restricted)
 * **Profile**: Generational time-collapse, moral stakes.
 * **Ni Structure**: Time-collapse syntax.
 * **Fe Validation**: Shared collective destiny, high moral gravity.
-* **Se Anchors**: One climactic, unforgettable resolution image.
+* **Se Anchors**: One climactic, unforgettable resolution image; figurative imagery is free, but any stated fact, place, event or experience comes from user-supplied material, else `[NEEDS FIRST-PARTY EVIDENCE]`.
 * **Use Case**: Keynotes, eulogies, founding documents.
