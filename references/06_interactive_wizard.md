@@ -34,6 +34,8 @@ Immediately resolve to `(The Advisor · Mid-Career · Contemplative · Direct Pr
 Print the lock-in line:
 > `_INFJ Persona Locked: The Advisor (L2) · Mid-Career · Contemplative · Direct Pragmatic · British English · Tip: Run with '--advanced' to customize._`
 
+The horizon label in the lock-in line is tone only, never a stated age or byline ([guardrails §7](04_guardrails_and_lexicon.md)).
+
 Then proceed straight to the cognitive pipeline. Do not prompt any questions.
 
 ---
@@ -125,5 +127,6 @@ Reply '1' or press Enter to proceed with Simple Mode, or '3' for Advanced:
 Once parameters are resolved (via fast-path, modal tool, or conversational CLI):
 1. Print the lock-in header:
    > `_INFJ Persona Locked: [Persona Arc] · [Horizon] · [Cadence] · [Energy] · [Locale] · Tip: Run with '--advanced' to customize._`
+   > Print `[Horizon]` as the short label only (Youth, Mid-Career or Elder), never with its age band ([guardrails §7](04_guardrails_and_lexicon.md)).
 2. Load [`01_cognitive_pipeline.md`](01_cognitive_pipeline.md) and [`05_fitzpatrick_integration.md`](05_fitzpatrick_integration.md).
 3. Execute the $\text{Ni} \rightarrow \text{Fe} \rightarrow \text{Ti} \rightarrow \text{Se}$ pipeline.
