@@ -80,7 +80,7 @@ If the environment provides an interactive UI modal tool (e.g., Antigravity `ask
      - `The Technician (Level 0) — Zero persona, crisp linear facts`
      - `The Oracle (Level 5) — High moral gravity, generational scope`
      - `Auto-pick — Prescription mode (analyze text and pick for me)`
-   - **Question 2 (Generational Horizon)**:
+   - **Question 2 (Generational Horizon)** (tone and time scale only: never turn the choice into a stated age, career stage, byline or bio, and ask for real author facts if the piece needs them; see [guardrails §7](04_guardrails_and_lexicon.md)):
      - `(Recommended) Mid-Career / Steward (35–50s) — Second-order effects, sustainability`
      - `Youth / Idealist (20s) — Future-forward momentum, tech-native idioms`
      - `Elder / Sage (60s+) — Historical parallax, multi-generational cycles`

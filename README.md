@@ -60,11 +60,12 @@ No need to memorize abstract numbers. Pick who you want speaking:
 * **The Oracle (Level 5 - Restricted)**: Generational scope and high moral gravity for keynotes, eulogies, and founding documents.
 
 ### 2. Multi-Dimensional Rhetorical Modulators
-Dial in age horizons and rhetorical traditions without resorting to caricatures:
+Dial in tone and time-scale horizons (never a stated age or life story) and rhetorical traditions without resorting to caricatures:
 * **Generational Horizons**: 
   - *Youth / Idealist (20s)*: Future-forward momentum, tech-native idioms, em-dash drive.
   - *Mid-Career / Steward (35–50s)*: Consequence-focused, second-order effects, organizational empathy.
   - *Elder / Sage (60s+)*: Multi-generational parallax, historical depth, aphoristic distillation.
+  - The age bands are calibration labels for voice only, never a stated age or byline.
 * **Rhetorical Cadences**:
   - *High-Context Harmonic*: Relational equilibrium, deference over dogmatism, collective harmony.
   - *Litotes / Restrained*: British understatement, dry irony, courteous reticence (*"not entirely without merit"*).
@@ -82,6 +83,7 @@ Dial in age horizons and rhetorical traditions without resorting to caricatures:
 * **Genre Inversion Guardrail**: If applied to purely procedural text (a bash script or refund policy), the skill automatically clamps to Level 0–1 to prevent absurdity.
 * **The Ti Inversion Gate**: Every abstract claim must instantly identify a concrete real-world mechanism, or it is deleted.
 * **Banned Lexicon Filters**: Hard-blocks pop-psychology buzzwords (*holding space*, *lean into*, *energetic alignment*, *the universe*).
+* **Voice, Not Identity (guardrails §7)**: The skill sets a writing voice, never a human identity. It does not invent an author, bio, credentials or headshot (clearly labelled fiction or a template you explicitly request is the one exception), and grounding details come only from facts you supply; otherwise it leaves a `[NEEDS FIRST-PARTY EVIDENCE]` marker for you to fill or remove.
 
 ---
 
@@ -188,7 +190,7 @@ kirby-persona-infj/
     ├── 01_cognitive_pipeline.md      # Strict Ni ➔ Fe ➔ Ti ➔ Se I/O contracts
     ├── 02_intensity_metrics.md       # Measurable thresholds for The Persona Arc
     ├── 03_rhetorical_vectors.md      # Generational horizons & rhetorical cadences
-    ├── 04_guardrails_and_lexicon.md  # Ti Inversion gate & banned slop lexicons
+    ├── 04_guardrails_and_lexicon.md  # Ti Inversion gate, banned lexicons, published-text and no-invented-author rules
     ├── 05_fitzpatrick_integration.md # Topic-Comment, Locomotive & Cathedral mappings
     └── 06_interactive_wizard.md      # Step 0 fork, Simple/Advanced wizard & presets
 ```
